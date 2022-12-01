@@ -18,4 +18,14 @@ class Day01 extends Day:
         return totals.max.toString()
 
     def solveB(input: List[String]): String =
-        return "B"
+        val totals = ArrayBuffer[Int]()
+        var curr = 0
+        for (line <- input) {
+            if (line == "") {
+                totals += curr
+                curr = 0
+            } else {
+                curr += line.toInt
+            }
+        }
+        return totals.sortWith(_ > _).slice(0, 3).sum.toString()
