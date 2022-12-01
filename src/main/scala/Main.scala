@@ -2,9 +2,12 @@ package adventofcode
 
 import scala.io.StdIn.readLine
 import scala.io.Source
-import solutions.Day
+import solutions.{Day, Day01}
 
-val solvers: Vector[Day] = Vector()
+// todo would be cool to fill this in at compile time by reflection
+val solvers: Vector[Day] = Vector(
+  Day01(),
+)
 
 @main def main(dayNum: Int, problem: String): Unit = 
     println(s"running day $dayNum problem $problem")
