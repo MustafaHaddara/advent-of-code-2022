@@ -5,8 +5,7 @@ import solutions.Day
 
 class Day01 extends Day:
   val day = 1;
-  val testInput = """
-1000
+  val testInput = """1000
 2000
 3000
 
