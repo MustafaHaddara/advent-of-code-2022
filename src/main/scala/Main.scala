@@ -3,13 +3,14 @@ package adventofcode
 import scala.io.StdIn.readLine
 import scala.io.Source
 
-import solutions.{Day, Day01, Day02, Day03}
+import solutions.*
 
 // todo would be cool to fill this in at compile time by reflection
 val solvers: Vector[Day] = Vector(
   Day01(),
   Day02(),
-  Day03()
+  Day03(),
+  Day04()
 )
 
 @main def main(dayNum: Int, problem: String, test: Boolean): Unit =
