@@ -13,7 +13,8 @@ val solvers: Vector[Day] = Vector(
   Day04(),
   Day05(),
   Day06(),
-  Day07()
+  Day07(),
+  Day08()
 )
 
 @main def main(dayNum: Int, problem: String, test: Boolean): Unit =
