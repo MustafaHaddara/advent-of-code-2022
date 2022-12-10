@@ -56,7 +56,7 @@ move 1 from 1 to 2
       parsedInstructions += Instruction(
         words(1).toInt,
         words(3).toInt - 1,
-        words(5).toInt - 1
+        words(5).toInt - 1,
       )
     }
 
@@ -65,7 +65,7 @@ move 1 from 1 to 2
   def solveA(input: List[String]): String =
     val (
       stacks: ArrayBuffer[ArrayBuffer[Char]],
-      instructions: ArrayBuffer[Instruction]
+      instructions: ArrayBuffer[Instruction],
     ) = parseInput(input): @unchecked
 
     for (instruction <- instructions) {
@@ -84,7 +84,7 @@ move 1 from 1 to 2
   def solveB(input: List[String]): String =
     val (
       stacks: ArrayBuffer[ArrayBuffer[Char]],
-      instructions: ArrayBuffer[Instruction]
+      instructions: ArrayBuffer[Instruction],
     ) = parseInput(input): @unchecked
 
     for (instruction <- instructions) {

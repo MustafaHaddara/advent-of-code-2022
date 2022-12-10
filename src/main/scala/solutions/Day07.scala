@@ -110,7 +110,7 @@ $ ls
 
   def computeSizes(
       root: File,
-      sizes: mutable.LinkedHashMap[String, Int]
+      sizes: mutable.LinkedHashMap[String, Int],
   ): Int =
     if (sizes.contains(root.path)) {
       return sizes.get(root.path).get
