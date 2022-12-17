@@ -21,6 +21,7 @@ val solvers: Vector[Day] = Vector(
   Day12(),
   Day13(),
   Day14(),
+  Day15(),
 )
 
 @main def main(dayNum: Int, problem: String, test: Boolean): Unit =
